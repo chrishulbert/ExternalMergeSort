@@ -1,0 +1,59 @@
+Output (debug): 10m 25s
+
+1:55:58 PM: Splitting
+2:01:18 PM: Splitting complete
+2:01:18 PM: 6 MB peak working set | 9 MB private bytes
+2:01:18 PM: Sorting chunks
+2:04:40 PM: Sorting chunks completed
+2:04:40 PM: 36 MB peak working set | 15 MB private bytes
+2:04:40 PM: Merging
+2:04:40 PM: Priming the queues
+2:04:40 PM: Priming the queues complete
+2:06:23 PM: Merging complete
+2:06:23 PM: 48 MB peak working set | 34 MB private bytes
+
+Output (release mode): 11m 30s
+
+3:03:42 PM: Splitting
+3:07:21 PM: Splitting complete
+3:07:21 PM: 7 MB peak working set | 9 MB private bytes
+3:07:21 PM: Sorting chunks
+3:08:58 PM: Sorting chunks completed
+3:08:58 PM: 36 MB peak working set | 15 MB private bytes
+3:08:58 PM: Merging
+3:08:58 PM: Priming the queues
+3:08:58 PM: Priming the queues complete
+3:10:08 PM: Merging complete
+3:10:08 PM: 49 MB peak working set | 27 MB private bytes
+
+
+Timing:
+
+Split - 4m - too slow
+3:03:42 PM: Splitting
+3:07:21 PM: Splitting complete
+
+Sort - 1.5m
+3:07:21 PM: Sorting chunks
+3:08:58 PM: Sorting chunks completed
+
+Merge - 1m
+3:08:58 PM: Merging
+3:10:08 PM: Merging complete
+
+
+10x bigger chunks:
+(7 1/2 mins split)
+3:14:56 PM: Splitting
+3:22:28 PM: Splitting complete
+3:22:28 PM: 6 MB peak working set | 8 MB private bytes
+(3 mins sort)
+3:22:28 PM: Sorting chunks
+3:25:32 PM: Sorting chunks completed
+3:25:32 PM: 241 MB peak working set | 29 MB private bytes
+(1 min merge)
+3:25:32 PM: Merging
+3:25:32 PM: Priming the queues
+3:25:34 PM: Priming the queues complete
+3:26:37 PM: Merging complete
+3:26:37 PM: 283 MB peak working set | 190 MB private bytes
