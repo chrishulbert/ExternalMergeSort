@@ -80,7 +80,8 @@ namespace ExternalMergeSort
         {
           if (queues[j] != null)
           {
-            if (lowest_index < 0 || String.CompareOrdinal(queues[j].Peek(), lowest_value) < 0)
+            // Comparison function updated to exactly match the behaviour on line 151 where Array.sort is called. Thanks to feedback from Gregory Gualtieri :)
+            if (lowest_index < 0 || String.Compare(queues[j].Peek(), lowest_value, StringComparison.CurrentCulture) < 0)
             {
               lowest_index = j;
               lowest_value = queues[j].Peek();
